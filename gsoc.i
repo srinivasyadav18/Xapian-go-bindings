@@ -6,7 +6,7 @@ namespace std{
         %template(StringVector) vector<string>;
         %template(ByteVector) vector<char>;
 }
-%{
+%{      //ignore < > angular brackets...this is library in mine
         #include <gsoc.h>
         #include <gsoc/constants.h>
         #include <gsoc/attributes.h>
