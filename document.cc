@@ -1,4 +1,5 @@
 #include "document.h"
+
 namespace Gsoc{
   int Document::NumberOfDocuments=0;
 }
