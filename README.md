@@ -44,8 +44,4 @@ go tool pack r gsoc.a first_go.o second_go.o input1.o input2.o input3.o input4.o
 mv gsoc.a /usr/local/go/pkg/linux_amd64
 
 
-#   --------AFTER GENERATING THE STATIC LIB we generate the shared lib-----------------------
-#go tool link -o ./work/libgsoc.so -importcfg ./work/importcfg.link -installsuffix dynlink -buildmode=shared -extld=g++ gsoc=/usr/local/go/pkg/linux_amd64_dynlink/gsoc.a runtime/cgo=/usr/local/go/pkg/linux_amd64_dynlink/runtime/cgo.a
-# mv work/libgsoc.so /usr/local/go/pkg/linux_amd64_dynlink/libgsoc.so
-
   
