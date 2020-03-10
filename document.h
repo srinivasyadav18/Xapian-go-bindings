@@ -1,8 +1,10 @@
 #ifndef DOCUMENT_H
 #define DOCUMENT_H
+
 #include <vector>
 #include <string>
 #include <iostream>
+
 namespace Gsoc{
   class Document{
     private :
@@ -16,4 +18,5 @@ namespace Gsoc{
       static int NumberOfDocuments;
   };
 }
+
 #endif
