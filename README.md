@@ -1,5 +1,7 @@
 # Xapian-go-bindings
 
+This is Just a prototype and how the build happens with swig and go using go tools (cgo , link , compile ,pack)
+
 STEP 1 :
   FIRST using swig we pass the interface file gsoc 
   
