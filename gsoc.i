@@ -6,20 +6,19 @@ namespace std{
         %template(StringVector) vector<string>;
         %template(ByteVector) vector<char>;
 }
-%{      //ignore < > angular brackets...this is library in mine
-        #include <gsoc.h>
-        #include <gsoc/constants.h>
-        #include <gsoc/attributes.h>
-        #include <gsoc/stem.h>
-        #include <gsoc/database.h>
-        #include <gsoc/document.h>
+%{      
+        #include "gsoc.h"
+        #include "constants.h"
+        #include "attributes.h"
+        #include "stem.h"
+        #include "database.h"
+        #include "document.h"
 %}
-%include <gsoc.h>
-%include <gsoc.h>
-%include <gsoc/constants.h>
-%include <gsoc/attributes.h>
-%include <gsoc/stem.h>
-%include <gsoc/database.h>
-%include <gsoc/document.h>
+
+%include "constants.h"
+%include "attributes.h"
+%include "stem.h"
+%include "database.h"
+%include "document.h"
 
 
