@@ -10,6 +10,7 @@
 
 // source: gsoc.i
 
+
 #define SWIGMODULE gsoc
 
 #ifdef __cplusplus
