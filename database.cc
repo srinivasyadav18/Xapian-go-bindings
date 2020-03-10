@@ -20,7 +20,7 @@ int Gsoc::Database::getId(){
 }
 
 void Gsoc::Database::setId(int x){
-  id=x;
+  id=x; 
 }
 
 void ::Gsoc::database_func(){
