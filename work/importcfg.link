@@ -1,0 +1,16 @@
+packagefile runtime=/usr/local/go/pkg/linux_amd64_dynlink/runtime.a
+packagefile gsoc=/usr/local/go/pkg/linux_amd64_dynlink/gsoc.a
+packagefile runtime/cgo=/usr/local/go/pkg/linux_amd64_dynlink/runtime/cgo.a
+packagefile sync=$WORK/b004/_pkg_.a
+packagefile syscall=$WORK/b013/_pkg_.a
+packagefile internal/race=$WORK/b005/_pkg_.a
+packagefile runtime=/usr/local/go/pkg/linux_amd64_dynlink/runtime.a
+packagefile sync/atomic=$WORK/b012/_pkg_.a
+packagefile internal/bytealg=$WORK/b007/_pkg_.a
+packagefile internal/oserror=$WORK/b014/_pkg_.a
+packagefile internal/cpu=$WORK/b008/_pkg_.a
+packagefile runtime/internal/atomic=$WORK/b009/_pkg_.a
+packagefile runtime/internal/math=$WORK/b010/_pkg_.a
+packagefile runtime/internal/sys=$WORK/b011/_pkg_.a
+packagefile errors=$WORK/b015/_pkg_.a
+packagefile internal/reflectlite=$WORK/b016/_pkg_.a

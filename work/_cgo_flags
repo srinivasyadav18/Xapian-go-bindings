@@ -1,0 +1,2 @@
+_CGO_CFLAGS=-I ./work -g -O2
+_CGO_LDFLAGS=-g -O2

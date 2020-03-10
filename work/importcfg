@@ -1,0 +1,4 @@
+#import config
+packagefile runtime/cgo=/usr/local/go/pkg/linux_amd64/runtime/cgo.a
+packagefile sync=/usr/local/go/pkg/linux_amd64/sync.a
+packagefile syscall=/usr/local/go/pkg/linux_amd64/syscall.a
