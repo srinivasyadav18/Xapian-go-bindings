@@ -1,0 +1,36 @@
+440  mkdir -p work
+ 2441  CGO_LDFLAGS='"-g" "-O2" "-lxapian"' go tool cgo -objdir ./work -importpath xapian -- -I ./work -g -O2 ./xapian.go
+ 2442  cd work
+ 2443  ls
+ 2444  ls -lah
+ 2445  gcc -I ../ -fPIC -m64 -pthread -fmessage-length=0 -I ./ -g -O2 -lxapian -o first_go.o -c _cgo_export.c
+ 2446  gcc -I ../ -fPIC -m64 -pthread -fmessage-length=0 -I ./ -g -O2 -lxapian -o second_go.o -c xapian.cgo2.c
+ 2447  gcc -I ../ -fPIC -m64 -pthread -fmessage-length=0 -I ./ -g -O2 -lxapian -o _cgo_main_.o -c _cgo_main.c
+ 2448  cd ..
+ 2449  history
+ 2450  g++ -I/usr/local/include -fPIC -m64 -pthread -fmessage-length=0  -g -O2 -lxapian -o ./work/input4.o -c go_wrap.cxx
+ 2451  cd work
+ 2452  cp /usr/local/lib/libxapian.so .
+ 2453  ls
+ 2454  g++ -lxapian -o _cgo_.o input4.o _cgo_main.o first_go.o second_go.o libxapian.so
+ 2455  ls
+ 2456  ls -l
+ 2457  g++ -lxapian -o _cgo_.o input4.o _cgo_main.o first_go.o second_go.o libxapian.so
+ 2458  g++ -lxapian -o _cgo_.o input4.o _cgo_main_.o first_go.o second_go.o libxapian.so
+ 2459  go tool cgo -dynpackage xapian -dynimport _cgo_2.o -dynout _cgo_import.go
+ 2460  go tool cgo -dynpackage xapian -dynimport _cgo_.o -dynout _cgo_import.go
+ 2461  vim importcfg
+ 2462  go tool compile -o gsoc.a -p gsoc -importcfg importcfg -pack -c=4 _cgo_gotypes.go gsoc.cgo1.go _cgo_import.go
+ 2463  go tool compile -o xapian.a -p gsoc -importcfg importcfg -pack -c=4 _cgo_gotypes.go xapian.cgo1.go _cgo_import.go
+ 2464  go tool pack r xapian.a first_go.o second_go.o libxapian.so
+ 2465  ls -lah
+ 2466  mv xapian.a /usr/local/go/pkg/linux_amd64
+ 2467  cd ..
+ 2468  ls
+ 2469  less xapian.go
+ 2470  history
+ 2471  cd wokr
+ 2472  cd work
+ 2473  go tool pack r xapian.a first_go.o second_go.o libxapian.so
+ 2474  ls
+ 2475  history
