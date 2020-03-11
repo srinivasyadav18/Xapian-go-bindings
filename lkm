@@ -34,3 +34,12 @@
  2473  go tool pack r xapian.a first_go.o second_go.o libxapian.so
  2474  ls
  2475  history
+
+
+CGO_CFLAGS="-g -O2 -lgsoc -lxapian -I/usr/local/include"
+CGO_CPPFLAGS="-lgsoc -lxapian -I/usr/local/include"
+CGO_CXXFLAGS="-g -O2 -lgsoc -lxapian -I/usr/local/include"
+CGO_FFLAGS="-g -O2 -lgsoc -lxapian -I/usr/local/include"
+CGO_LDFLAGS="-g -O2 -lgsoc -lxapian -I/usr/local/include"
+PKG_CONFIG="pkg-config"
+GOGCCFLAGS="-fPIC -m64 -pthread -fmessage-length=0 -fdebug-prefix-map=/tmp/go-build617879555=/tmp/go-build -gno-record-gcc-switches"
